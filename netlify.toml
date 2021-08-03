@@ -1,7 +1,6 @@
 [build]
-  functions = "functions/"
   publish = "dist/"
-  command = "export ELM_HOME=\"$NETLIFY_BUILD_BASE/cache/elm\" && npm install --no-optional && npm run build"
+  command = "npm install && npm run build"
 
 [dev]
   command = "npm start"
